@@ -1,0 +1,39 @@
+{
+  "name": "chaibrew",
+  "version": "1.0.0",
+  "description": "A lightweight utility-first CSS engine. Brew your Chai in your own style.",
+  "main": "./src/index.js",
+  "type": "module",
+
+  "exports": {
+    ".": "./src/index.js"
+  },
+
+  "keywords": [
+    "css",
+    "utility-css",
+    "tailwind-like",
+    "css-engine",
+    "javascript",
+    "frontend",
+    "styling"
+  ],
+
+  "author": "Ritik Raghuwanshi",
+  "license": "MIT",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ritik-Raghuwanshi/chaiBrew.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/Ritik-Raghuwanshi/chaiBrew/issues"
+  },
+
+  "homepage": "https://github.com/Ritik-Raghuwanshi/chaiBrew#readme",
+
+  "files": [
+    "src"
+  ]
+}
