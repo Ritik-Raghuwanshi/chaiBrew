@@ -1,39 +1,28 @@
-# ☕ ChaiBrew.js
+# ☕ ChaiBrew
 
 ### Brew your Chai, in your own style.
 
-> A lightweight, utility-first CSS engine that lets you **style directly from your HTML** — no CSS files needed.
+> A zero-setup, utility-first CSS engine — just install, import, and start styling.
 
 ---
 
 ## 🚀 What is ChaiBrew?
 
-ChaiBrew is a **runtime CSS engine** inspired by utility-first frameworks like Tailwind.
-
-Instead of writing CSS, you write simple class names:
+ChaiBrew is a **lightweight CSS engine** that lets you style your UI directly from HTML using simple utility classes like:
 
 ```html
 <div class="chai-bg-red chai-p-10 chai-rounded-8"></div>
 ```
 
-And ChaiBrew converts them into real styles instantly ⚡
+No CSS files. No configuration. No manual initialization.
+
+Just install and use ⚡
 
 ---
 
-## ⚡ Why ChaiBrew?
+## ⚡ Zero Setup Usage
 
-Because sometimes you don’t need a heavy setup — you just need speed.
-
-* ⚡ No build tools required
-* 🪶 Lightweight & fast
-* 🧠 Smart parsing engine
-* 🎯 Utility-first approach
-* 🧩 Fully customizable
-* 🔌 Easy integration
-
----
-
-## 📦 Installation
+### 📦 Install
 
 ```bash
 npm install chaibrew
@@ -41,27 +30,17 @@ npm install chaibrew
 
 ---
 
-## 🛠️ Usage
-
-### 1. Import
+### 🔌 Import (That’s it!)
 
 ```js
-import chaiBrew from "chaibrew";
+import "chaibrew";
 ```
+
+> No need to call anything manually — ChaiBrew runs automatically.
 
 ---
 
-### 2. Initialize
-
-```js
-document.addEventListener("DOMContentLoaded", () => {
-  chaiBrew();
-});
-```
-
----
-
-### 3. Use in HTML
+### 🎨 Use in HTML
 
 ```html
 <div class="chai-bg-blue chai-p-20 chai-text-white chai-rounded-10">
@@ -71,20 +50,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ---
 
-## 🔍 How It Works
+## 🧠 How It Works
 
-ChaiBrew scans your DOM for classes starting with:
+ChaiBrew automatically:
 
-```
-chai-
-```
-
-Then:
-
-1. 🔍 Parses the class
-2. 🧠 Maps it to a CSS property
+1. 🔍 Scans DOM for `chai-*` classes
+2. 🧠 Parses class names
 3. 🎨 Applies styles dynamically
-4. 🧹 Removes processed classes safely
+4. 🧹 Cleans processed classes safely
 
 ---
 
@@ -105,7 +78,7 @@ Then:
 
 ---
 
-## 🧱 Supported Utilities (Sample)
+## 🧱 Utility Examples
 
 | Class          | Output                |
 | -------------- | --------------------- |
@@ -117,26 +90,23 @@ Then:
 
 ---
 
-## 🧩 Customization
-
-Extend your own design system using a map:
-
-```js
-export const map = {
-  bg: "background-color",
-  p: "padding",
-  m: "margin",
-  text: "color"
-};
-```
-
----
-
 ## 🛡️ Safe by Design
 
 * ✔ Only processes `chai-*` classes
 * ✔ Keeps your custom classes untouched
 * ✔ No global CSS pollution
+
+---
+
+## 🧩 Optional Manual Control
+
+If you ever want manual control:
+
+```js
+import chaiBrew from "chaibrew";
+
+chaiBrew();
+```
 
 ---
 
@@ -158,8 +128,8 @@ src/
 ## 💡 Use Cases
 
 * 🚀 Rapid prototyping
-* 🎯 Learning CSS engine internals
-* 🧪 Building Tailwind-like systems
+* 🎯 Learning CSS engines
+* 🧪 Building custom utility systems
 * 🧩 Lightweight UI projects
 
 ---
@@ -167,14 +137,14 @@ src/
 ## 🧠 Inspiration
 
 Inspired by utility-first CSS frameworks like Tailwind,
-but built to understand and simplify the core idea.
+built to simplify and understand the core idea.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, ideas, and improvements are welcome!
-Let’s brew something amazing together ☕
+Contributions and ideas are welcome.
+Let’s brew something amazing ☕
 
 ---
 

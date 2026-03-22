@@ -1,4 +1,4 @@
-import chaiBrew from "./engine/indexer";
+import chaiBrew from "./engine/indexer.js";
 
 function run() {
   try {
