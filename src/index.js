@@ -17,4 +17,4 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
   }
 }
 
-export default chaiEngine;
+export default chaiBrew;
