@@ -1,0 +1,9 @@
+# .npmignore
+node_modules/
+.env
+src/
+*.log
+.DS_Store
+package-lock.json
+*.tgz
+index.html
