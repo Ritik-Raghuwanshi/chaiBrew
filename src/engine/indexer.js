@@ -18,7 +18,6 @@ function chaiBrew() {
     classList.forEach((cls) => {
       if (!cls.startsWith("chai-")) return;
       const result = parser.parse(cls);
-     console.log(result)
       if (result) {
         applier.apply(element, result);
       }
@@ -29,12 +28,9 @@ function chaiBrew() {
     const filteredClasses = classList.filter(
       (cls) => !cls.startsWith("chai-")
     );
-     console.log("Filter",filteredClasses)
     if (filteredClasses.length > 0) {
-      console.log("Ye run hua")
       element.setAttribute("class", filteredClasses.join(" "));
     } else {
-      console.log("Removed Class:",element.removeAttribute("class"))
       element.removeAttribute("class")
     }
   });

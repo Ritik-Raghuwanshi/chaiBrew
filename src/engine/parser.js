@@ -25,26 +25,25 @@ class Parser {
   }
   parse(className) {
     if (!this.isChaiClass(className)) return;
-   
+
     const parts = this.extractParts(className);
-  
-    const key = parts[0]; 
-   
+
+    const key = parts[0];
+
     const value = parts[1];
-  
+
     // safety check
     if (!key) return;
 
-    const property = this.getPropertyKey(key); 
-    // console.log(property)
+    const property = this.getPropertyKey(key);
     if (!property) return "Property does not exist ";
 
     const finalValue = this.getFinalValue(key, value);
 
-    if(finalValue === undefined){
-      return `${property}; `
-    }else{
-      return `${property}:${finalValue}; `; 
+    if (finalValue === undefined) {
+      return `${property}; `;
+    } else {
+      return `${property}:${finalValue}; `;
     }
   }
 }
