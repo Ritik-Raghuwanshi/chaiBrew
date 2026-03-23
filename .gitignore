@@ -5,4 +5,5 @@ build/
 *.log
 .DS_Store
 package-lock.json
-chaibrew-1.0.0.tgz
+chaibrew-1.0.1.tgz
+index.html

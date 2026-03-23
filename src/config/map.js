@@ -26,7 +26,7 @@ export const map = {
 
   // 🧱 Border
   rounded: "border-radius",
-  borderw: "border-width",
+  borderW: "border-width",
 
   // 🔤 Typography
   fs: "font-size",
@@ -41,9 +41,10 @@ export const map = {
   left: "left",
   right: "right",
   bottom: "bottom",
+  center: "text-align:center",
 
   // 🎯 Flexbox
-  flex: "display",
+  flex:"display:flex",
   jc: "justify-content",
   ai: "align-items",
   fd: "flex-direction",
@@ -54,5 +55,6 @@ export const map = {
 
   // 🔄 Others
   overflow: "overflow",
-  z: "z-index"
+  z: "z-index",
+  item:"align-item"
 }

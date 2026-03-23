@@ -28,20 +28,24 @@ class Parser {
    
     const parts = this.extractParts(className);
   
-    const key = parts[0];
+    const key = parts[0]; 
    
     const value = parts[1];
-
+  
     // safety check
-    if (!key || !value) return;
+    if (!key) return;
 
-    const property = this.getPropertyKey(key);
+    const property = this.getPropertyKey(key); 
     // console.log(property)
     if (!property) return "Property does not exist ";
 
     const finalValue = this.getFinalValue(key, value);
-    if(!finalValue)return
-    return `${property}:${finalValue}; `;
+
+    if(finalValue === undefined){
+      return `${property}; `
+    }else{
+      return `${property}:${finalValue}; `; 
+    }
   }
 }
 
